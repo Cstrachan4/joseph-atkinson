@@ -1,0 +1,35 @@
+@import '../styles.scss';
+.home-page {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+	font-size: 20px;
+	line-height: 140%;
+	letter-spacing: 0.01em;
+	ul {
+		display: flex;
+		li:after {
+			content: ' ';
+			white-space: pre;
+		}
+	}
+	p {
+		> span {
+			display: flex;
+			flex-direction: row;
+			white-space: pre;
+			@include media('<=tablet'){
+				display: inline;
+				white-space: normal;
+			}
+		}
+	}
+	@include media('<=tablet'){
+		font-size: 15px;
+	}
+}
+
+
+

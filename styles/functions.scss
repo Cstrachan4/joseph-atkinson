@@ -1,0 +1,11 @@
+
+@function str_repeat($str, $n) {
+  $output: $str;
+  @if $n == 1 {
+    @return $output;
+  }
+  @for $i from 2 through $n {
+    $output: $output + ' ' + $str;
+  }
+  @return $output;
+}
