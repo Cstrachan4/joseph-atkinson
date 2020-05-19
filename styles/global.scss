@@ -10,6 +10,9 @@ body > div {
 body {
 	background-color: $c-off-white;
 	padding: 64px;
+	@include media('<=tablet'){
+		padding: 28px;
+	}
 	font-family: $f-primary;
 }
 
