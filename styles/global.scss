@@ -25,7 +25,6 @@ ul {
 a {
 	color: $c-off-black;
 	text-decoration: none;
-	transition: all .2s $t-bezier;
 	&:hover {
 		font-style: italic;
 	}
