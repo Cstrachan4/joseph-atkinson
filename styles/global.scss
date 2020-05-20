@@ -26,8 +26,9 @@ a {
 	color: $c-off-black;
 	text-decoration: none;
 	transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+	transform: skewX(0);
 	&:hover {
-		transform: skewX(-0.1deg);
+		transform: skewX(-10deg);
 	}
 }
 
