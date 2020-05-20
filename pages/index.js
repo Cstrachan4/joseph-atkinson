@@ -24,7 +24,7 @@ function HomePage() {
 	  					<a href="mailto:hellojosephatkinson@gmail.com">Email</a>,
 	  				</li>
 	  				<li>
-	  					<a href="https://www.are.na/j-a-jrm_56tfn14">Are.na</a>
+	  					<a href="https://www.are.na/j-a-jrm_56tfn14" target="_blank">Are.na</a>
 	  				</li>
 	  			</ul>
 	  		</div>
