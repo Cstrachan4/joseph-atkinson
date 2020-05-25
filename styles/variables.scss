@@ -1,11 +1,18 @@
 $breakpoints: (
   tablet: 1025px,
   desktop: 1080px,
-  imac: 1800px
+  imac: 1800px,
+  min-text: 1442px,
+  max-text: 1923px
 );
 
 $c-off-black: #0E0E0E;
 $c-off-white: #f5f5f5;
+
+
+$f-min: 15px;
+$f-main: 1.04vw;
+$f-max: 20px;
 
 $f-primary: 'Mercury', 'Helvetica Neue', 'Helvetica', sans-serif;
 
