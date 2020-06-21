@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import { FavIcon } from '../../public/favicon/favicon'
-// import Gtag from '../Gtag'
+import Gtag from '../Gtag'
 
 
 const HeadMeta = ({title, description}) => {
@@ -10,6 +10,7 @@ return(
   <Head>
  	<meta charSet="utf-8" />
  	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+ 	<Gtag trackingId="UA-170200254-1" />
  	<FavIcon />
     <title>{ title || '' }</title>
     <meta key="description" name="description" content={description} />
