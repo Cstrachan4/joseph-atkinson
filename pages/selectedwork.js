@@ -3,7 +3,7 @@ import PdfViewer from '../components/PdfViewer';
 
 import '../lib/styles.js';
 
-function Portfolio() {
+function SelectedWork() {
 
   return (
   	<React.Fragment>
@@ -15,4 +15,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio;
+export default SelectedWork;
