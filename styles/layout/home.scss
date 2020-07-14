@@ -1,4 +1,4 @@
-@import '../styles.scss';
+@import '../globals.scss';
 .home-page {
 	display: flex;
 	align-content: space-between;
@@ -8,6 +8,10 @@
 	font-size: 20px;
 	line-height: 140%;
 	letter-spacing: 0.01em;
+  padding: 64px;
+  @include media('<=tablet'){
+    padding: 28px;
+  }
 	ul {
 		display: flex;
 		li:after {
