@@ -1,0 +1,23 @@
+@import '../../styles/globals.scss';
+
+.pdf-viewer__viewer {
+  height: 100vh;
+}
+
+.toolbar {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.toolbar__main {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+
+.toolbar__item {
+  padding: 0 2px;
+}
