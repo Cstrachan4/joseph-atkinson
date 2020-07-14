@@ -1,8 +1,4 @@
-import {connect, useDispatch, useSelector} from "react-redux";
-import clsx from 'clsx';
-
 import HeadMeta from '../components/HeadMeta';
-import Example from '../components/_refcomponent';
 
 import '../lib/styles.js';
 
