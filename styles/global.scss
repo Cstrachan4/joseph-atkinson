@@ -25,10 +25,10 @@ a {
 	color: $c-off-black;
 	text-decoration: none;
 	transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-	transform: skew(0);
+	transform: skew(0deg);
 	display: inline-block;
 	&:hover {
-		transform: skew(-10deg);
+		transform: skew(-9deg);
 	}
 }
 

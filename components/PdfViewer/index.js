@@ -16,7 +16,7 @@ export default function PdfViewer({
           <Viewer
             fileUrl={fileUrl}
             layout={layout}
-            defaultScale={SpecialZoomLevel.PageWidth}
+            defaultScale={SpecialZoomLevel.PageFit}
           />
         </div>
       </Worker>

@@ -19,5 +19,20 @@
 }
 
 .toolbar__item {
-  padding: 0 2px;
+  padding: 0 4px;
+  height: 32px;
+  line-height: 30px;
+}
+
+.viewer-zoom-popover-target{
+  padding:0;
+}
+
+.viewer-button {
+  display: flex;
+  align-items: center;
+}
+
+.viewer-tooltip-body {
+  padding: 0 4px 4px 4px;
 }
