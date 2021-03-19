@@ -11,7 +11,7 @@ export default function PdfViewer({
 
   return (
     <div className={clsx('pdf-viewer')}>
-     	<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
+     	<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
         <div className="pdf-viewer__viewer">
           <Viewer
             fileUrl={fileUrl}

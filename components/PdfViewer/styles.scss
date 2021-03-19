@@ -1,5 +1,9 @@
 @import 'styles/lib.scss';
 
+.pdf-viewer {
+  font-family: $f-primary;
+}
+
 .pdf-viewer__viewer {
   height: 100vh;
 }
