@@ -1,5 +1,19 @@
+@import './variables.scss';
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
 @mixin grid-base() {
-	display: grid;
-    grid-gap: 0 $d-grid-gutter;
-    grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  grid-gap: 0 $d-grid-gutter;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin font-smoothing($type: antialiased) {
+  $moz-type: if($type == antialiased, grayscale, auto);
+  -moz-osx-font-smoothing: $moz-type;
+  -webkit-font-smoothing: $type;
 }

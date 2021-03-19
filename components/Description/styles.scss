@@ -1,0 +1,20 @@
+@import 'styles/lib.scss';
+
+.description {
+  @include f-main;
+  grid-column: span 2;
+  color: $c-text;
+  opacity: 0;
+  animation: fadein .5s $t-bezier;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  padding: 26px 30px;
+  @include media('>=tablet'){
+    padding: 0;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+  to   { opacity: 1; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+}

@@ -1,34 +1,23 @@
-import HeadMeta from '../components/HeadMeta';
+import HeadMeta from 'components/HeadMeta';
+import Description from 'components/Description';
+import Experience from 'components/Experience';
+import Links from 'components/Links';
 
-import '../lib/styles.js';
+import { DESCRIPTION, EXPERIENCE, LINKS } from 'lib/content.js';
+
+import 'styles/styles.scss';
 
 function HomePage() {
-
   return (
-  	<>
-	  	<HeadMeta title="Joseph Atkinson" description="Joseph Atkinson is a designer and digital art director who lives and works in London. Currently designing interfaces with TBC.work" />
-	  	<div className="home-page">
-	  		<div>
-	  			<p>
-	  			<span>Joseph Atkinson is a designer and digital art director who lives and works in London. </span>
-				<span>Currently designing interfaces with <a href="http://tbc.work" target="_blank">TBC.work</a>.</span>
-				</p>
-	  		</div>
-	  		<div>
-	  			<ul>
-	  				<li>
-	  					<a href="mailto:hellojosephatkinson@gmail.com">Email</a>,
-	  				</li>
-	  				<li>
-	  					<a href="https://www.are.na/j-a-jrm_56tfn14" target="_blank">Are.na</a>
-	  				</li>
-	  			</ul>
-	  		</div>
-	  	</div>
-  	</>
+    <div className="home-page">
+      <HeadMeta title="Joseph Atkinson" description={DESCRIPTION} />
+      <Description text={DESCRIPTION} />
+      <Experience>
+        <EXPERIENCE />
+      </Experience>
+      <Links links={LINKS} />
+    </div>
   )
 }
 
-export default HomePage;
-
-
+export default HomePage

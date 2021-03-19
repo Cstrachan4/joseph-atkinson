@@ -1,0 +1,35 @@
+@import 'styles/lib.scss';
+
+.links {
+  @include f-small;
+  color: $c-text;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadein .5s $t-bezier;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  width: 36%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 26px 30px 26px 15px;
+  box-sizing: border-box;
+  @include media('>=tablet'){
+    padding: 6px 0 0 0;
+    position: relative;
+    width: auto;
+  }
+  > li {
+    &:not(:last-child):after {
+      content: ',';
+      padding-right: 4px;
+    }
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+  to   { opacity: 1; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+}
+

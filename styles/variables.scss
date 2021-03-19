@@ -1,21 +1,23 @@
-$breakpoints: (
-  tablet: 1025px,
-  desktop: 1080px,
-  imac: 1800px,
-  min-text: 1442px,
-  max-text: 1923px
-);
+$c-text: #0B0B0B;
+$c-underline: #A7A7A7;
+$c-highlight: #969696;
+$c-hover: #101010;
+$c-bg: #ffffff;
 
-$c-off-black: #0E0E0E;
-$c-off-white: #ffffff;
-
-
-$f-min: 15px;
-$f-main: 1.04vw;
-$f-max: 20px;
+$c-active: rgba(0,0,0,0.05);
+$c-focus: rgba(0,0,0,0.2);
 
 $f-primary: 'Plain', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 $t-bezier: cubic-bezier(0.645,0.045,0.355,1);
 
-$z-main: 1;
+$d-grid-gutter: 120px;
+
+$z-projects: 1;
+
+$breakpoints: (
+  tablet: 1110px,
+  typeminsmall: 1230px,
+  typemin: 1301px,
+  typemax: 1920px
+);
