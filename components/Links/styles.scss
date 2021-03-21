@@ -2,7 +2,7 @@
 
 .links {
   @include f-small;
-  color: $c-text;
+
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
@@ -21,9 +21,21 @@
     width: auto;
   }
   > li {
-    &:not(:last-child):after {
+    a {
+      transition: color .35s $t-bezier;
+      color: $c-text;
+    }
+    &:not(:last-child) a:after {
+      color: $c-text;
       content: ',';
       padding-right: 4px;
+      transition: color .35s $t-bezier;
+    }
+  }
+  &__link--inactive {
+    color: $c-hover !important;
+    &:after {
+      color: $c-hover !important;
     }
   }
 }

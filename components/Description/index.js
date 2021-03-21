@@ -2,12 +2,12 @@ import './styles.scss';
 import clsx from 'clsx';
 
 export default function Description({
-  text
+  children
 }) {
 
   return (
     <div className={clsx('description')}>
-      { text }
+      { children }
     </div>
   )
 }

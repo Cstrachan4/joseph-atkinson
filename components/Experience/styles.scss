@@ -12,6 +12,16 @@
   animation-delay: 1.25s;
   animation-fill-mode: forwards;
   padding: 26px 15px 26px 30px;
+  span,
+  a {
+    transition: color .35s $t-bezier;
+    // transition: inherit;
+    // display: inline-block;
+  }
+  &__span--inactive,
+  &__link--inactive {
+    color: $c-hover !important;
+  }
   @include media('>=tablet'){
     padding: 6px 0 0 0;
     position: relative;
