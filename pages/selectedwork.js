@@ -3,11 +3,13 @@ import PdfViewer from '../components/PdfViewer';
 
 import '../lib/styles.js';
 
+import { META_DESCRIPTION } from 'lib/content.js';
+
 function SelectedWork() {
 
   return (
   	<React.Fragment>
-	  	<HeadMeta title="Joseph Atkinson" description="Joseph Atkinson is a designer and digital art director who lives and works in London. Currently designing interfaces with TBC.work" />
+	  	<HeadMeta title="Joseph Atkinson" description={META_DESCRIPTION} />
 	  	<div className="portfolio">
         <PdfViewer fileUrl="./files/JA_Portfolio_General_2021.pdf" />
 	  	</div>
