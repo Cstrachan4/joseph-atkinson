@@ -3,6 +3,7 @@ import HeadMeta from 'components/HeadMeta';
 import Desc from 'components/Description';
 import Exp from 'components/Experience';
 import Links from 'components/Links';
+import Clock from 'components/Clock';
 
 import { META_DESCRIPTION, DESCRIPTION, EXPERIENCE, LINKS } from 'lib/content.js';
 
@@ -41,6 +42,7 @@ function HomePage() {
         <EXPERIENCE onMouseOver={onExpMouseOver} onMouseOut={onExpMouseOut} active={expHover} />
       </Exp>
       <Links links={LINKS} />
+      <Clock />
     </div>
   )
 }

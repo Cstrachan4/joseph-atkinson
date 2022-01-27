@@ -13,7 +13,7 @@ const HeadMeta = ({ title, description }) => {
       <title>{ title || '' }</title>
       <meta name="description" content={ description } />
       { Gtag({trackingId:"UA-170200254-1"})}
-      <link rel="icon" type="image/png" href={ darkMode.value ? FaviconWhite : FaviconBlack } />
+      <link id="favicon" rel="icon" type="image/png" href={ darkMode.value ? FaviconWhite : FaviconBlack } />
       <meta name="google-site-verification" content="YXFUpMLagLA10GTfwy3fLRsL8eNz3f4VD58tqZZ81lc" />
     </Head>
   )
