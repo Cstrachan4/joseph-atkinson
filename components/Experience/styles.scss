@@ -1,4 +1,4 @@
-@import 'styles/lib.scss';
+@import "styles/lib.scss";
 
 .experience {
   @include f-small;
@@ -8,13 +8,13 @@
   bottom: 0;
   left: 0;
   opacity: 0;
-  animation: fadein .5s $t-bezier;
+  animation: fadein 0.5s $t-bezier;
   animation-delay: 1.25s;
   animation-fill-mode: forwards;
   padding: 26px 15px 26px 30px;
   span,
   a {
-    transition: color .35s $t-bezier;
+    transition: color 0.35s $t-bezier;
     // transition: inherit;
     // display: inline-block;
   }
@@ -22,14 +22,20 @@
   &__link--inactive {
     color: $c-hover !important;
   }
-  @include media('>=tablet'){
-    padding: 6px 0 0 0;
+  @include media(">=tablet") {
+    padding: 0 0 0 0;
     position: relative;
     width: auto;
   }
 }
 
 @keyframes fadein {
-  from { opacity: 0; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
-  to   { opacity: 1; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+  from {
+    opacity: 0;
+    transition: 0.5s color $t-bezier, 0.5s opacity $t-bezier;
+  }
+  to {
+    opacity: 1;
+    transition: 0.5s color $t-bezier, 0.5s opacity $t-bezier;
+  }
 }

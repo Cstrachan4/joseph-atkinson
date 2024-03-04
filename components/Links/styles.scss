@@ -1,4 +1,4 @@
-@import 'styles/lib.scss';
+@import "styles/lib.scss";
 
 .links {
   @include f-small;
@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
-  animation: fadein .5s $t-bezier;
+  animation: fadein 0.5s $t-bezier;
   animation-delay: 2s;
   animation-fill-mode: forwards;
   width: 36%;
@@ -15,21 +15,21 @@
   right: 0;
   padding: 26px 30px 26px 15px;
   box-sizing: border-box;
-  @include media('>=tablet'){
-    padding: 6px 0 0 0;
+  @include media(">=tablet") {
+    padding: 0 0 0 0;
     position: relative;
     width: auto;
   }
   > li {
     a {
-      transition: color .35s $t-bezier;
+      transition: color 0.35s $t-bezier;
       color: $c-text;
     }
     &:not(:last-child) a:after {
       color: $c-text;
-      content: ',';
+      content: ",";
       padding-right: 4px;
-      transition: color .35s $t-bezier;
+      transition: color 0.35s $t-bezier;
     }
   }
   &__link--inactive {
@@ -41,7 +41,12 @@
 }
 
 @keyframes fadein {
-  from { opacity: 0; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
-  to   { opacity: 1; transition: .5s color $t-bezier, .5s opacity $t-bezier; }
+  from {
+    opacity: 0;
+    transition: 0.5s color $t-bezier, 0.5s opacity $t-bezier;
+  }
+  to {
+    opacity: 1;
+    transition: 0.5s color $t-bezier, 0.5s opacity $t-bezier;
+  }
 }
-

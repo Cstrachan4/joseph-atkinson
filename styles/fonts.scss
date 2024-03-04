@@ -1,26 +1,34 @@
 @font-face {
-    font-family: 'TBC Sans';
-    src: url('/fonts/TBC-Regular.eot');
-    src: url('/fonts/TBC-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/TBC-Regular.woff2') format('woff2'),
-        url('/fonts/TBC-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "TBC Sans";
+  src: url("/fonts/TBC-Regular.eot");
+  src: url("/fonts/TBC-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/TBC-Regular.woff2") format("woff2"),
+    url("/fonts/TBC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Plain';
-    src: url('/fonts/Plain-LightIta.woff2') format('woff2'),
-        url('/fonts/Plain-LightIta.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Plain";
+  src: url("/fonts/Plain-LightIta.woff2") format("woff2"),
+    url("/fonts/Plain-LightIta.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Plain';
-    src: url('/fonts/Plain-Light.woff2') format('woff2'),
-        url('/fonts/Plain-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Plain";
+  src: url("/fonts/Plain-Light.woff2") format("woff2"),
+    url("/fonts/Plain-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/NeueHaasDisplay-Bold.woff2") format("woff2"),
+    url("/fonts/NeueHaasDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

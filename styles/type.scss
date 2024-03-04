@@ -1,27 +1,30 @@
-@import './variables.scss';
-@import './mixins.scss';
+@import "./variables.scss";
+@import "./mixins.scss";
 
 @mixin f-main {
   font-family: $f-primary;
+  font-weight: bold;
   font-size: 1.406vw;
   line-height: 130%;
-  letter-spacing: .5px;
-  @include media('<=typemin'){
+  letter-spacing: 0.5px;
+  @include media("<=typemin") {
     font-size: 18.3px;
   }
-  @include media('>=typemax'){
+  @include media(">=typemax") {
     font-size: 27px;
   }
 }
 
 @mixin f-small {
   font-family: $f-primary;
+  font-weight: bold;
   font-size: 0.8114vw;
   line-height: 130%;
-  letter-spacing: .5px;
-  @include media('<=typeminsmall'){
+  letter-spacing: 0.5px;
+  @include media("<=typeminsmall") {
     font-size: 9.98px;
   }
-  @include media('>=typemax'){
+  @include media(">=typemax") {
     font-size: 15.58px;
-  }}
+  }
+}

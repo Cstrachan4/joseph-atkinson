@@ -1,15 +1,16 @@
-$c-text: #0B0B0B;
-$c-underline: #A7A7A7;
+$c-text: #0b0b0b;
+$c-underline: #a7a7a7;
 $c-highlight: #969696;
 $c-hover: #dedede;
 $c-bg: #ffffff;
 
-$c-active: rgba(0,0,0,0.05);
-$c-focus: rgba(0,0,0,0.2);
+$c-active: rgba(0, 0, 0, 0.05);
+$c-focus: rgba(0, 0, 0, 0.2);
 
-$f-primary: 'Plain', 'Helvetica Neue', 'Helvetica', sans-serif;
+$f-primary: "Neue Haas Grotesk Display Pro", "Helvetica Neue", "Helvetica",
+  sans-serif;
 
-$t-bezier: cubic-bezier(0.645,0.045,0.355,1);
+$t-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
 
 $d-grid-gutter: 120px;
 
@@ -19,5 +20,5 @@ $breakpoints: (
   tablet: 1110px,
   typeminsmall: 1230px,
   typemin: 1301px,
-  typemax: 1920px
+  typemax: 1920px,
 );
