@@ -1,13 +1,5 @@
-import './styles.scss';
-import clsx from 'clsx';
+import styles from "./styles.module.scss";
 
-export default function Description({
-  children
-}) {
-
-  return (
-    <div className={clsx('description')}>
-      { children }
-    </div>
-  )
+export default function Description({ children }) {
+  return <div className={styles.description}>{children}</div>;
 }

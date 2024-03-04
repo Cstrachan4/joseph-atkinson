@@ -1,32 +1,22 @@
-import { useState } from 'react';
-import './styles.scss';
-import clsx from 'clsx';
+import { useState } from "react";
+import styles from "./styles.module.scss";
 
-export default function Links({
-  links
-}) {
-
-  const [hov,setHov] = useState(false);
+export default function Links({ links }) {
+  const [hov, setHov] = useState(false);
 
   const onMouseOver = (e) => {
     const active = e.target.dataset.ref;
     setHov(active);
-  }
+  };
 
   const onMouseOut = () => {
     setHov(false);
-  }
+  };
 
   return (
-    <ul
-      className={
-        clsx(
-          'links'
-        )
-      }
-    >
-      {
-        links && links.map((link, i) => {
+    <ul className={styles.links}>
+      {links &&
+        links.map((link, i) => {
           return (
             <li key={i}>
               <a
@@ -37,17 +27,14 @@ export default function Links({
                 target="_blank"
                 rel="noreferrer"
                 className={
-                  clsx(
-                    (hov && hov !== link.name) && 'links__link--inactive'
-                  )
+                  hov && hov !== link.name && styles["links__link--inactive"]
                 }
               >
                 {link.name}
               </a>
             </li>
-          )
-        })
-      }
+          );
+        })}
     </ul>
-  )
+  );
 }

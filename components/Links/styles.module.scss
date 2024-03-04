@@ -21,6 +21,7 @@
     width: auto;
   }
   > li {
+    list-style: none;
     a {
       transition: color 0.35s $t-bezier;
       color: $c-text;

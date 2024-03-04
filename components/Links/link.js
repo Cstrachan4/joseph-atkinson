@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import styles from "./styles.module.scss";
 
 export default function Link({
   text,
@@ -6,12 +6,11 @@ export default function Link({
   onMouseOver,
   onMouseOut,
   name,
-  url
+  url,
 }) {
-
   return (
     <a
-      className={clsx((active && active !== name) && 'experience__link--inactive')}
+      className={active && active !== name && styles["links__link--inactive"]}
       data-ref={name}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
@@ -21,5 +20,5 @@ export default function Link({
     >
       {text}
     </a>
-  )
+  );
 }
