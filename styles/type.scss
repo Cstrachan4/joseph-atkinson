@@ -3,7 +3,7 @@
 
 @mixin f-main {
   font-family: $f-primary;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.406vw;
   line-height: 130%;
   letter-spacing: 0.5px;
@@ -17,7 +17,7 @@
 
 @mixin f-small {
   font-family: $f-primary;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 0.8114vw;
   line-height: 130%;
   letter-spacing: 0.5px;
